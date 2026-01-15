@@ -8,7 +8,7 @@ https://onkarrpy2403-ux.github.io/roboticsclub-web/
 
 ---
 
-## Team Name : **CYBERNAUTS**
+## 🔤 Team Name : **CYBERNAUTS**
 
 ## 👥 Team Members
 
