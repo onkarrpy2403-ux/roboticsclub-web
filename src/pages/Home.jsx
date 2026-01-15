@@ -167,7 +167,7 @@ const Home = () => {
                 <strong>Date: </strong> {upcomingevents[currentEvent].date}
               </p>
               <Link
-                to="/events"
+                to="/roboticsclub-web/events"
                 className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded-2xl cursor-pointer transition duration-300 hover:scale-105 shadow-lg"
               >
                 Learn More
