@@ -342,7 +342,8 @@ export default function Achievements() {
                 Today, 2023
               </p>
               <Link
-                to="/roboticsclub-web/achievements"
+                to="https://technologymagazine.com/"
+                target="_blank"
                 className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors font-medium"
               >
                 Read Article <span className="text-lg">→</span>
@@ -357,7 +358,8 @@ export default function Achievements() {
                 Episode 45, 2022
               </p>
               <Link
-                to="/roboticsclub-web/achievements"
+                to="https://open.spotify.com/show/4gDobzQkpG04UwqRlz6Rzb"
+                target="_blank"
                 className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors font-medium"
               >
                 Listen Now <span className="text-lg">→</span>

@@ -195,7 +195,7 @@ const ProjectsPage = () => {
   const [filteredProjects, setFilteredProjects] = useState(projectsData);
   const [filterType, setFilterType] = useState("All");
   const [filterYear, setFilterYear] = useState("All");
-  const [selectedProject, setSelectedProject] = useState(null);
+
   useEffect(() => {
     document.title = "Projects | Robotics Club | NITP";
   }, []);
@@ -209,13 +209,6 @@ const ProjectsPage = () => {
     setFilteredProjects(filtered);
   }, [filterType, filterYear]);
 
-  const openModal = (project) => {
-    setSelectedProject(project);
-  };
-
-  const closeModal = () => {
-    setSelectedProject(null);
-  };
   const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-black text-white pt-16 pb-8">
@@ -269,7 +262,9 @@ const ProjectsPage = () => {
 
         {/* Projects Grid */}
         <div className="flex flex-wrap justify-center gap-8">
-          {filteredProjects.map((project) => (
+          {filteredProjects.length === 0 ? (
+            <p className="text-red-600 text-xl md:text-2xl">No projects found.</p>
+          ) : (filteredProjects.map((project) => (
             <div
               key={project.id}
               className="w-80 bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer shadow-2xl border border-gray-700 hover:shadow-cyan-500/50"
@@ -312,7 +307,7 @@ const ProjectsPage = () => {
                 )}
               </div>
             </div>
-          ))}
+          )))}
         </div>
       </section>
       {/* Ongoing Projects Section */}
